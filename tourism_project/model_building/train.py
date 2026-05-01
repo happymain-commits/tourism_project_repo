@@ -21,6 +21,11 @@ mlflow.set_experiment("mlops-training-experiment")
 
 api = HfApi()
 
+df = pd.read_csv("tourism_project/data/tourism.csv")
+print("Dataset loaded successfully.")
+
+# Drop the unique identifier
+df.drop(columns=['CustomerID'], inplace=True)
 
 Xtrain_path = "hf://datasets/happymain/Project-Tourism/Xtrain.csv"
 Xtest_path = "hf://datasets/happymain/Project-Tourism/Xtest.csv"
