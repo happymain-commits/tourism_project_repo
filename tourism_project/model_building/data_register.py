@@ -2,7 +2,7 @@ from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
 from huggingface_hub import HfApi, create_repo
 import os
 
-repo_id = "happymain/Tourism-Project"
+repo_id = "happymain/Project-Tourism"
 repo_type = "dataset"
 
 # Initialize API client
