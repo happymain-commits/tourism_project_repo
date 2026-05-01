@@ -37,6 +37,8 @@ Xtest = pd.read_csv(Xtest_path)
 ytrain = pd.read_csv(ytrain_path)
 ytest = pd.read_csv(ytest_path)
 
+target_col = 'ProdTaken'
+
 numeric_features = df.select_dtypes(include=['int64', 'float64']).columns
 numeric_features = numeric_features.drop(target_col)
 
