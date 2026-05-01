@@ -34,7 +34,7 @@ cat_cols = [
 label_encoders = {}
 for col in cat_cols:
     le = LabelEncoder()
-    dataTemp[col] = le.fit_transform(dataTemp[col])
+    df[col] = le.fit_transform(df[col])
     label_encoders[col] = le  # store encoder for future use
 
 target_col = 'ProdTaken'
